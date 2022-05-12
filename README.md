@@ -78,3 +78,9 @@ For example,
 ./unix_client 192.168.0.10 8080
 ./unix_client localhost 8080
 ```
+
+### Tracing
+If you want to discover, what is being transmitted over the network during the communication between the programs, use the following command:
+```
+sudo tcpdump -i any -A port <port>
+```
