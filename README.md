@@ -12,6 +12,7 @@ Also, you need to install XML-RPC C development libraries.
 ### Third-party development utilities and libraries
 On Debian-based OS the required third-party development utilities and libraries can be installed with the following command:
 ```
+sudo apt update
 sudo apt install clang gcc git make libcurl4-openssl-dev libssl-dev
 ```
 
