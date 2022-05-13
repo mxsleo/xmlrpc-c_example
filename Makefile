@@ -25,7 +25,7 @@ INCLUDES_CLIENT		= $(shell $(XMLRPC_C_CONFIG) client --cflags)
 default: all
 
 .c.o:
-	$(CC) $(CFLAGS) $(INCLUDES_SERVER_ABYSS) -c -o $@ $<
+	$(CC) $(CFLAGS) $(INCLUDES_SERVER_ABYSS) -c $< -o $@
 
 $(EXECUTABLE_SERVER_ABYSS): $(OBJECTS_SERVER_ABYSS)
 	$(CC) $(LDFLAGS) $(LIBS_SERVER_ABYSS) $(OBJECTS_SERVER_ABYSS) -o $@
